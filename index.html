@@ -1,0 +1,131 @@
+<!-- ======================= index.html ======================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Profile</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    nav { background: #020617; border-bottom: 1px solid #1f2937; }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo { font-weight: 600; }
+
+    .menu { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+    .menu a {
+      text-decoration: none;
+      color: #cbd5e1;
+      padding: 0.45rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .menu a:hover { background: #1e293b; color: #fff; }
+
+    section { max-width: 1000px; margin: 2.5rem auto; padding: 2rem; }
+
+    h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.6rem; margin: 1.5rem 0 1rem; color: #93c5fd; }
+
+    p { margin-bottom: 1rem; color: #cbd5e1; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover { background: #1d4ed8; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #020617;
+      border: 1px solid #1f2937;
+      padding: 1.2rem;
+      border-radius: 10px;
+    }
+
+    footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; }
+
+    @media (max-width: 600px) {
+      section { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">Your Name</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <h1>Your Full Name</h1>
+  <p>
+    I am an academic researcher committed to rigorous scholarship,
+    interdisciplinary collaboration, and the advancement of knowledge
+    through computational and analytical inquiry.
+  </p>
+
+  <h2>Curriculum Vitae</h2>
+  <p>A concise overview of my academic preparation and scholarly work.</p>
+
+  <a class="btn" href="cv.pdf" download>Download CV (PDF)</a>
+
+  <iframe src="cv.pdf" style="width:100%;height:600px;margin-top:1rem;border:1px solid #1f2937;border-radius:8px;"></iframe>
+</section>
+
+<footer>© <span id="year"></span> Your Name · Academic Website</footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
