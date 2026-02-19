@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Research Interests</title>
 <link rel="stylesheet" href="style.css" />
+
+<style>
+/* Diffraction background for research page */
+body {
+  background: url('https://physicsopenlab.org/wp-content/uploads/2017/08/diffraction-grating.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.research-box {
+  background: rgba(255,255,255,0.85);
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+</style>
+
 </head>
 <body>
 
-<!-- NAVBAR HERE -->
 <nav>
   <div class="nav-container">
-    <div class="logo">Your Name</div>
+    <div class="logo">Anirban Mullick</div>
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="cv.html">CV</a>
@@ -20,16 +37,28 @@
     </div>
   </div>
 </nav>
-  
-<section>
+
+<section class="research-box">
 <h1>Research Interests</h1>
-<div class="grid">
-<div class="card">Computational modeling</div>
-<div class="card">Artificial intelligence</div>
-<div class="card">Data science</div>
-<div class="card">Responsible technology</div>
-</div>
+
+<ul>
+  <li><strong>Optics and Photonics:</strong> Nonlinear optics, spectroscopy, solar energy devices, photonic circuits, and laser-based systems.</li>
+  <li><strong>Magnetic Materials and Spintronics:</strong> Experimental investigation of magnetic phenomena and spin-dependent transport in functional materials.</li>
+  <li><strong>Thin Films, Two-Dimensional, and Carbon-Based Materials:</strong> Growth, characterization, and physical properties of low-dimensional material systems.</li>
+  <li><strong>Energy-Efficient and Functional Materials:</strong> Materials for sustainable energy conversion, storage, and advanced technological applications.</li>
+  <li><strong>Condensed Matter Experiments:</strong> Spectroscopic and physical characterization of solid-state systems.</li>
+  <li><strong>High-Energy Physics Experiments:</strong> Interest in detector-based measurements and experimental probes of fundamental particles and interactions.</li>
+</ul>
+
+<p style="font-size:0.9rem; margin-top:2rem;">
+Background diffraction image courtesy of
+<a href="https://physicsopenlab.org/2017/08/29/laser-diffraction-grating/" target="_blank">
+PhysicsOpenLab – Laser Diffraction Grating
+</a>.
+</p>
+
 </section>
 
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
