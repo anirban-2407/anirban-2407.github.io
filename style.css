@@ -114,3 +114,8 @@ footer {
   h1 { font-size: 2rem; }
 }
 }
+.intro {
+  font-family: "Segoe Print", "Bradley Hand", "Patrick Hand", cursive;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
