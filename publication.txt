@@ -1,0 +1,9 @@
+<!-- ======================= publications.html ======================= -->
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Publications</title></head>
+<body>
+<section>
+<h1>Publications</h1>
+<p>Author. (Year). Title. <em>Journal</em>.</p>
+</section>
+</body></html>
