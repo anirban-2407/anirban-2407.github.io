@@ -126,6 +126,15 @@ footer {
 .intro div:last-child {
   font-family: "Segoe Print", "Bradley Hand", "Patrick Hand", cursive;
 }
+/* Update notice styling */
+.update-note {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Segoe Print", "Bradley Hand", "Patrick Hand", cursive;
+  font-size: 1.2rem;
+  color: #c0392b; /* warm academic red */
+  letter-spacing: 1px;
+}
 
 /* Responsive: stack on small screens */
 @media (max-width: 700px) {
