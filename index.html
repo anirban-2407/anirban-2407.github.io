@@ -5,6 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Home</title>
 <link rel="stylesheet" href="style.css" />
+
+<style>
+
+/* Two-column layout */
+.profile-container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left column */
+.profile-left {
+  flex: 0 0 180px;
+}
+
+/* Passport photo */
+.profile-left img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+}
+
+/* Profile links */
+.profile-links a {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Right column - handwritten intro */
+.profile-right {
+  flex: 1;
+  min-width: 260px;
+  font-family: "Segoe Print", "Bradley Hand", "Patrick Hand", cursive;
+  line-height: 1.8;
+}
+
+/* Mobile stacking */
+@media (max-width: 700px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-left {
+    text-align: center;
+  }
+
+  .profile-right {
+    text-align: left;
+  }
+}
+
+</style>
+
 </head>
 <body>
 
@@ -25,35 +83,31 @@
 
 <section>
 
-<div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;">
+<div class="profile-container">
 
-  <!-- Passport Size Photo -->
-  <div style="flex:0 0 160px;">
-    <img src="photo.jpg" 
-         alt="Anirban Mullick" 
-         style="width:160px; height:200px; object-fit:cover; border:2px solid #000;">
-  </div>
+  <!-- LEFT COLUMN -->
+  <div class="profile-left">
 
-  <!-- Introduction -->
-  <div style="flex:1; min-width:260px;">
+    <img src="photo.jpg" alt="Anirban Mullick">
 
-    <h1>Anirban Mullick</h1>
-
-    <p>
-      Howrah, West Bengal, India
-    </p>
-
-    <p>
-      <strong>LinkedIn:</strong> 
+    <div class="profile-links">
+      <strong>LinkedIn</strong>
       <a href="https://www.linkedin.com/in/anirbanmullick" target="_blank">
         www.linkedin.com/in/anirbanmullick
       </a>
-      <br>
-      <strong>ORCID:</strong> 
+
+      <strong>ORCID</strong>
       <a href="https://orcid.org/0009-0000-5109-7832" target="_blank">
-        https://orcid.org/0009-0000-5109-7832
+        0009-0000-5109-7832
       </a>
-    </p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="profile-right">
+
+    <h1>Anirban Mullick</h1>
 
     <p>
       I was born and brought up in Howrah, West Bengal, India. I completed my 
@@ -71,8 +125,8 @@
     </p>
 
     <p>
-      During my Master’s research, I studied environmental stress response in 
-      plant systems using Raman, FT-IR, and UV-Vis spectroscopy, focusing on 
+      During my Master’s research, I investigated environmental stress response 
+      in plant systems using Raman, FT-IR, and UV-Vis spectroscopy, focusing on 
       identifying spectral signatures of biochemical and structural changes. 
       This work strengthened my foundation in experimental design, spectral 
       acquisition, and scientific data interpretation.
