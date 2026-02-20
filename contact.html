@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Contact</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR HERE -->
 <nav>
   <div class="nav-container">
-     <div class="logo">Anirban Mullick</div>
+    <div class="logo">Anirban Mullick</div>
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="cv.html">CV</a>
@@ -21,13 +22,50 @@
     </div>
   </div>
 </nav>
-  
-<section>
+
+<section style="text-align:center; max-width:700px; margin:auto;">
+
 <h1>Contact</h1>
-<p>Email: your.email@example.com</p>
+
+<p style="margin-top:1.5rem;">
+<strong>Anirban Mullick</strong><br>
+Howrah, West Bengal, India
+</p>
+
+<p style="margin-top:1.5rem;">
+<strong>Email</strong><br>
+<a href="mailto:anirbanmullick051@gmail.com">
+anirbanmullick051@gmail.com
+</a>
+</p>
+
+<p style="margin-top:1.5rem;">
+<strong>LinkedIn</strong><br>
+<a href="https://www.linkedin.com/in/anirbanmullick" target="_blank">
+www.linkedin.com/in/anirbanmullick
+</a>
+</p>
+
+<p style="margin-top:1.5rem;">
+<strong>ORCID</strong><br>
+<a href="https://orcid.org/0009-0000-5109-7832" target="_blank">
+0009-0000-5109-7832
+</a>
+</p>
+
+<p style="margin-top:2rem; font-style:italic;">
+Open to PhD opportunities, research collaborations, and industry-oriented R&D roles 
+in spectroscopy, materials science, and experimental physics.
+</p>
+
 </section>
 
+<footer>© <span id="year"></span> Anirban Mullick</footer>
+
 <script src="script.js"></script>
-</body></html>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
-
+</body>
+</html>
