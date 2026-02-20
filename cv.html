@@ -5,58 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Curriculum Vitae</title>
 <link rel="stylesheet" href="style.css" />
-
-<style>
-
-/* Subtle paper texture background */
-body {
-  background-color: #e8e3d9;
-  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-}
-
-/* Paper-style CV container */
-.cv-paper {
-  background: #fbf8f2;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 3rem 2.5rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  border: 1px solid #d6d2c8;
-}
-
-/* Headings */
-.cv-paper h1 {
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.cv-paper h2 {
-  margin-top: 2rem;
-  border-bottom: 1px solid #999;
-  padding-bottom: 0.3rem;
-}
-
-.cv-contact {
-  text-align: center;
-  font-size: 0.95rem;
-  margin-bottom: 2rem;
-}
-
-.cv-paper ul {
-  margin-top: 0.5rem;
-  padding-left: 1.2rem;
-}
-
-.cv-paper li {
-  margin-bottom: 0.4rem;
-}
-
-.download-btn {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-</style>
 </head>
 <body>
 
@@ -75,28 +23,31 @@ body {
   </div>
 </nav>
 
-<div class="download-btn">
+<section>
+
+<h1>Curriculum Vitae</h1>
+
+<div style="text-align:center; margin-bottom:1.5rem;">
   <a class="btn" href="cv.pdf" download>Download CV (PDF)</a>
 </div>
 
-<section class="cv-paper">
+<h2>Anirban Mullick</h2>
 
-<h1>Anirban Mullick</h1>
-
-<div class="cv-contact">
-  Howrah, West Bengal, India <br>
-  +91 8240684258 | anirbanmullick051@gmail.com <br>
-  www.linkedin.com/in/anirbanmullick
-</div>
+<p>
+Howrah, West Bengal, India <br>
++91 8240684258 | anirbanmullick051@gmail.com <br>
+www.linkedin.com/in/anirbanmullick
+</p>
 
 <h2>Personal Profile</h2>
 <p>
-Detail-oriented Physics postgraduate with hands-on experience in spectroscopic analysis 
-and experimental research. Proficient in Raman, FT-IR, and UV-Vis techniques for material 
-and biochemical characterization, with strong skills in data analysis, instrumentation 
-handling, and experimental optimization. Experienced in machine learning model 
-development for regression and classification. Seeking to contribute analytical and 
-research expertise to industry-focused R&D and technology-driven teams.
+Detail-oriented Physics postgraduate with hands-on experience in spectroscopic 
+analysis and experimental research. Proficient in Raman, FT-IR, and UV-Vis 
+techniques for material and biochemical characterization, with strong skills 
+in data analysis, instrumentation handling, and experimental optimization. 
+Experienced in machine learning model development for regression and 
+classification. Seeking to contribute analytical and research expertise 
+to industry-focused R&D and technology-driven teams.
 </p>
 
 <h2>Education</h2>
@@ -170,7 +121,9 @@ research expertise to industry-focused R&D and technology-driven teams.
 
 <footer>© <span id="year"></span> Anirban Mullick</footer>
 <script src="script.js"></script>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
 
 </body>
 </html>
