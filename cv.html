@@ -3,8 +3,60 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CV</title>
+<title>Curriculum Vitae</title>
 <link rel="stylesheet" href="style.css" />
+
+<style>
+
+/* Subtle paper texture background */
+body {
+  background-color: #e8e3d9;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+/* Paper-style CV container */
+.cv-paper {
+  background: #fbf8f2;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 1px solid #d6d2c8;
+}
+
+/* Headings */
+.cv-paper h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cv-paper h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid #999;
+  padding-bottom: 0.3rem;
+}
+
+.cv-contact {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.cv-paper ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.cv-paper li {
+  margin-bottom: 0.4rem;
+}
+
+.download-btn {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+</style>
 </head>
 <body>
 
@@ -23,13 +75,102 @@
   </div>
 </nav>
 
-<section>
-<h1>Curriculum Vitae</h1>
-<a class="btn" href="cv.pdf" download>Download CV (PDF)</a>
-<iframe src="cv.pdf" style="width:100%;height:700px;margin-top:1rem;border:1px solid #1f2937;border-radius:8px;"></iframe>
+<div class="download-btn">
+  <a class="btn" href="cv.pdf" download>Download CV (PDF)</a>
+</div>
+
+<section class="cv-paper">
+
+<h1>Anirban Mullick</h1>
+
+<div class="cv-contact">
+  Howrah, West Bengal, India <br>
+  +91 8240684258 | anirbanmullick051@gmail.com <br>
+  www.linkedin.com/in/anirbanmullick
+</div>
+
+<h2>Personal Profile</h2>
+<p>
+Detail-oriented Physics postgraduate with hands-on experience in spectroscopic analysis 
+and experimental research. Proficient in Raman, FT-IR, and UV-Vis techniques for material 
+and biochemical characterization, with strong skills in data analysis, instrumentation 
+handling, and experimental optimization. Experienced in machine learning model 
+development for regression and classification. Seeking to contribute analytical and 
+research expertise to industry-focused R&D and technology-driven teams.
+</p>
+
+<h2>Education</h2>
+<p><strong>M.Sc. Physics</strong>, NIT Tiruchirappalli (2025) – CGPA: 8.95/10</p>
+<p><strong>B.Sc. Physics (Hons.)</strong>, University of Calcutta (2023) – CGPA: 8.14/10</p>
+<p><strong>Class XII</strong>, St. Thomas’ Church School (2020) – 82.16%</p>
+<p><strong>Class X</strong>, St. Thomas’ Church School (2018) – 82.16%</p>
+
+<h2>Research Experience</h2>
+<p><strong>Nano Photonics Lab, Department of Physics, NIT Tiruchirappalli</strong></p>
+<p>Supervisor: Dr. B. Karthikeyan (July 2024 – July 2025)</p>
+
+<ul>
+  <li>Calibrated and optimized confocal Raman spectrometer for spectral acquisition.</li>
+  <li>Performed FT-IR and UV-Vis spectroscopic measurements.</li>
+  <li>Preprocessed and analyzed spectral data using MATLAB, Python, and Origin.</li>
+  <li>Developed machine learning models (Linear Regression, GPR, SVM, Neural Networks, Regression Trees, PLS-DA).</li>
+  <li>Identified biochemical and structural signatures from spectral datasets.</li>
+</ul>
+
+<h2>Technical Skills</h2>
+<ul>
+  <li><strong>Programming:</strong> Python</li>
+  <li><strong>Software:</strong> MATLAB, LaTeX, Origin, MS Excel, Word, PowerPoint</li>
+  <li><strong>Instrumentation:</strong> Raman, FT-IR, UV-Vis Spectroscopy</li>
+</ul>
+
+<h2>Publications</h2>
+<ul>
+  <li>Mullick, A. et al. Spectroscopic Analysis of Acid Rain-Induced Stress in Neem (Azadirachta indica). DOI: http://dx.doi.org/10.2139/ssrn.5187401 [In communication]</li>
+</ul>
+
+<h2>Poster Presentations</h2>
+<ul>
+  <li>IBS 2025 – IIT Madras (March 2025)</li>
+  <li>NSEOM 2025 – Coimbatore (February 2025)</li>
+  <li>ICAMA 2024 – SRM Institute, Chennai (October 2024)</li>
+</ul>
+
+<h2>Workshops & Symposiums</h2>
+<ul>
+  <li>International Symposium on Sustainable Fibers – Thailand & UK (Oct 2024)</li>
+  <li>User Awareness Workshop on Nanotechnology – IIT Delhi (June 2024)</li>
+  <li>Fabrication & Characterization Workshop – IIT Kharagpur (June 2024)</li>
+  <li>Symposium on Pulsed Laser Technology – NIT Trichy (Sept 2024)</li>
+  <li>International Symposium on Photonics – NIT Trichy (Feb 2024)</li>
+</ul>
+
+<h2>Examinations Qualified</h2>
+<ul>
+  <li>JAM 2023 (AIR 845)</li>
+  <li>CUET-PG 2023</li>
+  <li>WB-JEE 2020</li>
+  <li>KIITEE 2020</li>
+</ul>
+
+<h2>Leadership & Responsibility</h2>
+<ul>
+  <li>Web Developer & Social Media Coordinator – InPhyNITT (Jan–Feb 2024)</li>
+</ul>
+
+<h2>Awards & Achievements</h2>
+<ul>
+  <li>Outstanding Student – M.Sc. Physics (2024–25)</li>
+  <li>Academic Proficiency Prize – M.Sc. Physics (2023–24)</li>
+  <li>1st Rank – B.Sc. Physics (Hons.)</li>
+  <li>Sabita Dey Memorial Medal</li>
+</ul>
+
 </section>
 
+<footer>© <span id="year"></span> Anirban Mullick</footer>
 <script src="script.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
 </body>
 </html>
-
